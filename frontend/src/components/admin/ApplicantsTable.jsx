@@ -17,7 +17,7 @@ const ApplicantsTable = () => {
         try {
             axios.defaults.withCredentials = true;
             const res = await axios.post(
-              `https://placement-portal-xoj8.onrender.com/status/${id}/update`,
+              `https://placement-portal-xoj8.onrender.com/api/v1/application/status/${id}/update`,
               { status }
             );
             console.log(res);

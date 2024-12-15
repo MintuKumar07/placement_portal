@@ -10,7 +10,7 @@ const useGetAllAdminJobs = () => {
         const fetchAllAdminJobs = async () => {
             try {
                 const res = await axios.get(
-                  `https://placement-portal-xoj8.onrender.com/getadminjobs`,
+                  `https://placement-portal-xoj8.onrender.com/api/v1/job/getadminjobs`,
                   { withCredentials: true }
                 );
                 if(res.data.success){

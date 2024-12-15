@@ -10,7 +10,7 @@ const useGetAllCompanies = () => {
         const fetchCompanies = async () => {
             try {
                 const res = await axios.get(
-                  `https://placement-portal-xoj8.onrender.com/get`,
+                  `https://placement-portal-xoj8.onrender.com/api/v1/company/getcompany`,
                   { withCredentials: true }
                 );
                 console.log('called');
