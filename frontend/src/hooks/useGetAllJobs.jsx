@@ -11,7 +11,7 @@ const useGetAllJobs = () => {
         const fetchAllJobs = async () => {
             try {
                 const res = await axios.get(
-                  `https://placement-portal-xoj8.onrender.com/api/v1/get?keyword=${searchedQuery}`,
+                  `https://placement-portal-xoj8.onrender.com/get?keyword=${searchedQuery}`,
                   { withCredentials: true }
                 );
                 if(res.data.success){

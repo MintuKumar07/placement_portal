@@ -46,7 +46,7 @@ const Signup = () => {
     try {
       dispatch(setLoading(true));
       const res = await axios.post(
-        "https://placement-portal-xoj8.onrender.com/api/v1/user/register",
+        "https://placement-portal-xoj8.onrender.com/register",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

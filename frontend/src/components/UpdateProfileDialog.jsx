@@ -47,7 +47,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
         try {
             setLoading(true);
             const res = await axios.post(
-              `https://placement-portal-xoj8.onrender.com/api/v1/profile/update`,
+              `https://placement-portal-xoj8.onrender.com/profile/update`,
               formData,
               {
                 headers: {
