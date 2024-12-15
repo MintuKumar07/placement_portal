@@ -10,7 +10,10 @@ const useGetAppliedJobs = () => {
     useEffect(()=>{
         const fetchAppliedJobs = async () => {
             try {
-                const res = await axios.get(`${APPLICATION_API_END_POINT}/get`, {withCredentials:true});
+                const res = await axios.get(
+                  `https://placement-portal-xoj8.onrender.com/api/v1/get`,
+                  { withCredentials: true }
+                );
                 //console.log(res.data);
                 if(res.data.success){
                     dispatch(setAllAppliedJobs(res.data.application));

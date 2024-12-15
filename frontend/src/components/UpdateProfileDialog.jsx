@@ -46,12 +46,16 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
         }
         try {
             setLoading(true);
-            const res = await axios.post(`${USER_API_END_POINT}/profile/update`, formData, {
+            const res = await axios.post(
+              `https://placement-portal-xoj8.onrender.com/api/v1/profile/update`,
+              formData,
+              {
                 headers: {
-                    'Content-Type': 'multipart/form-data'
+                  "Content-Type": "multipart/form-data",
                 },
-                withCredentials: true
-            });
+                withCredentials: true,
+              }
+            );
             if (res.data.success) {
                 dispatch(setUser(res.data.user));
                 toast.success(res.data.message);
