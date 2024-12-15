@@ -47,7 +47,7 @@ const CompanySetup = () => {
         try {
             setLoading(true);
             const res = await axios.put(
-              `https://placement-portal-xoj8.onrender.com/update/${params.id}`,
+              `https://placement-portal-xoj8.onrender.com/api/v1/company/update/${params.id}`,
               formData,
               {
                 headers: {

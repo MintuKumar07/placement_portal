@@ -11,7 +11,7 @@ const useGetCompanyById = (companyId) => {
         const fetchSingleCompany = async () => {
             try {
                 const res = await axios.get(
-                  `https://placement-portal-xoj8.onrender.com/get/${companyId}`,
+                  `https://placement-portal-xoj8.onrender.com/api/v1/company/get/${companyId}`,
                   { withCredentials: true }
                 );
                 //console.log(res.data.company);

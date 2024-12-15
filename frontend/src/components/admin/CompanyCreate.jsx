@@ -17,7 +17,7 @@ const CompanyCreate = () => {
     const registerNewCompany = async () => {
         try {
             const res = await axios.post(
-              `https://placement-portal-xoj8.onrender.com/register`,
+              `https://placement-portal-xoj8.onrender.com/api/v1/company/register`,
               { companyName },
               {
                 headers: {
@@ -49,7 +49,7 @@ const CompanyCreate = () => {
                 <Input
                     type="text"
                     className="my-2"
-                    placeholder="JobHunt, Microsoft etc."
+                    placeholder="Google, Microsoft etc."
                     onChange={(e) => setCompanyName(e.target.value)}
                 />
                 <div className='flex items-center gap-2 my-10'>
